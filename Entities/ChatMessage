@@ -1,0 +1,28 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "group_id": {
+      "type": "string",
+      "description": "ID of the group"
+    },
+    "order_id": {
+      "type": "string",
+      "description": "Optional: ID of specific order being discussed"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "group_id",
+    "sender_email",
+    "message"
+  ]
+}
