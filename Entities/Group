@@ -1,0 +1,46 @@
+{
+  "name": "Group",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the card acquisition group"
+    },
+    "description": {
+      "type": "string",
+      "description": "Group description"
+    },
+    "invite_code": {
+      "type": "string",
+      "description": "Unique code to join the group"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "joined_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "description": "List of group members"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the group owner"
+    }
+  },
+  "required": [
+    "name",
+    "invite_code",
+    "owner_email"
+  ]
+}
